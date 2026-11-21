@@ -1,0 +1,2156 @@
+{
+ "summary": {
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "total": 118,
+  "overall": [
+   94,
+   118
+  ],
+  "actionable": [
+   85,
+   108
+  ],
+  "per_category": {
+   "canonical": [
+    47,
+    49
+   ],
+   "paraphrase": [
+    33,
+    49
+   ],
+   "compound": [
+    5,
+    7
+   ],
+   "compound_arg": [
+    0,
+    3
+   ],
+   "out_of_scope": [
+    9,
+    10
+   ]
+  },
+  "per_domain": {
+   "browser_action": [
+    11,
+    17
+   ],
+   "system_action": [
+    26,
+    29
+   ],
+   "app_action": [
+    18,
+    22
+   ],
+   "window_action": [
+    12,
+    12
+   ],
+   "file_action": [
+    7,
+    10
+   ],
+   "media_action": [
+    6,
+    8
+   ],
+   "screenshot_action": [
+    1,
+    3
+   ],
+   "ocr_action": [
+    1,
+    2
+   ],
+   "vision_action": [
+    2,
+    2
+   ],
+   "security_action": [
+    1,
+    3
+   ]
+  },
+  "latency_us": {
+   "median": 72.0,
+   "mean": 73.7,
+   "p95": 127.7,
+   "max": 216.7
+  }
+ },
+ "rows": [
+  {
+   "cat": "canonical",
+   "utterance": "search google for python tutorials",
+   "expected": [
+    [
+     "browser_action",
+     "google_search"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "google_search"
+    ]
+   ],
+   "ok": true,
+   "us": 77.2
+  },
+  {
+   "cat": "canonical",
+   "utterance": "search youtube for lofi music",
+   "expected": [
+    [
+     "browser_action",
+     "youtube_search"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "youtube_search"
+    ]
+   ],
+   "ok": true,
+   "us": 69.6
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open youtube",
+   "expected": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "ok": true,
+   "us": 49.7
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open github",
+   "expected": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "ok": true,
+   "us": 49.2
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open gmail",
+   "expected": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "ok": true,
+   "us": 68.3
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open linkedin",
+   "expected": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "ok": true,
+   "us": 50.9
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open stackoverflow",
+   "expected": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "ok": true,
+   "us": 53.9
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open reddit",
+   "expected": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "ok": true,
+   "us": 52.2
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "launch chatgpt",
+   "expected": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "ok": true,
+   "us": 50.2
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "please open google",
+   "expected": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "ok": true,
+   "us": 51.5
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "can you search google for weather in pune",
+   "expected": [
+    [
+     "browser_action",
+     "google_search"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "google_search"
+    ]
+   ],
+   "ok": true,
+   "us": 67.3
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "search the web for python tutorials",
+   "expected": [
+    [
+     "browser_action",
+     "google_search"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 92.0
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "google machine learning",
+   "expected": [
+    [
+     "browser_action",
+     "google_search"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 82.2
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "go to youtube",
+   "expected": [
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 71.6
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open settings",
+   "expected": [
+    [
+     "system_action",
+     "settings"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "settings"
+    ]
+   ],
+   "ok": true,
+   "us": 46.2
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open task manager",
+   "expected": [
+    [
+     "system_action",
+     "task_manager"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "task_manager"
+    ]
+   ],
+   "ok": true,
+   "us": 50.1
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open control panel",
+   "expected": [
+    [
+     "system_action",
+     "control_panel"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "control_panel"
+    ]
+   ],
+   "ok": true,
+   "us": 49.8
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open command prompt",
+   "expected": [
+    [
+     "system_action",
+     "cmd"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "cmd"
+    ]
+   ],
+   "ok": true,
+   "us": 49.5
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open powershell",
+   "expected": [
+    [
+     "system_action",
+     "powershell"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "powershell"
+    ]
+   ],
+   "ok": true,
+   "us": 46.9
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open calculator",
+   "expected": [
+    [
+     "system_action",
+     "calculator"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "calculator"
+    ]
+   ],
+   "ok": true,
+   "us": 47.7
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open notepad",
+   "expected": [
+    [
+     "system_action",
+     "notepad"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "notepad"
+    ]
+   ],
+   "ok": true,
+   "us": 45.5
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open device manager",
+   "expected": [
+    [
+     "system_action",
+     "device_manager"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "device_manager"
+    ]
+   ],
+   "ok": true,
+   "us": 49.4
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open registry editor",
+   "expected": [
+    [
+     "system_action",
+     "registry_editor"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "registry_editor"
+    ]
+   ],
+   "ok": true,
+   "us": 50.0
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open sound settings",
+   "expected": [
+    [
+     "system_action",
+     "sound_settings"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "sound_settings"
+    ]
+   ],
+   "ok": true,
+   "us": 50.0
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "start the task manager",
+   "expected": [
+    [
+     "system_action",
+     "task_manager"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": false,
+   "us": 80.1
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "launch settings",
+   "expected": [
+    [
+     "system_action",
+     "settings"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "settings"
+    ]
+   ],
+   "ok": true,
+   "us": 46.8
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "show me the task manager",
+   "expected": [
+    [
+     "system_action",
+     "task_manager"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 79.8
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "what time is it",
+   "expected": [
+    [
+     "system_action",
+     "current_time"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "current_time"
+    ]
+   ],
+   "ok": true,
+   "us": 49.0
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "what is the date today",
+   "expected": [
+    [
+     "system_action",
+     "current_date"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "current_date"
+    ]
+   ],
+   "ok": true,
+   "us": 53.0
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "what day is it",
+   "expected": [
+    [
+     "system_action",
+     "current_day"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "current_day"
+    ]
+   ],
+   "ok": true,
+   "us": 49.2
+  },
+  {
+   "cat": "canonical",
+   "utterance": "battery status",
+   "expected": [
+    [
+     "system_action",
+     "battery_status"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "battery_status"
+    ]
+   ],
+   "ok": true,
+   "us": 47.0
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "how much battery is left",
+   "expected": [
+    [
+     "system_action",
+     "battery_status"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "battery_status"
+    ]
+   ],
+   "ok": true,
+   "us": 53.6
+  },
+  {
+   "cat": "canonical",
+   "utterance": "cpu usage",
+   "expected": [
+    [
+     "system_action",
+     "cpu_usage"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "cpu_usage"
+    ]
+   ],
+   "ok": true,
+   "us": 44.6
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "how is my cpu doing",
+   "expected": [
+    [
+     "system_action",
+     "cpu_usage"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "cpu_usage"
+    ]
+   ],
+   "ok": true,
+   "us": 52.9
+  },
+  {
+   "cat": "canonical",
+   "utterance": "ram usage",
+   "expected": [
+    [
+     "system_action",
+     "ram_usage"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "ram_usage"
+    ]
+   ],
+   "ok": true,
+   "us": 44.6
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "how much memory is being used",
+   "expected": [
+    [
+     "system_action",
+     "ram_usage"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "ram_usage"
+    ]
+   ],
+   "ok": true,
+   "us": 58.5
+  },
+  {
+   "cat": "canonical",
+   "utterance": "disk usage",
+   "expected": [
+    [
+     "system_action",
+     "disk_usage"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "disk_usage"
+    ]
+   ],
+   "ok": true,
+   "us": 45.9
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "how much disk space do i have",
+   "expected": [
+    [
+     "system_action",
+     "disk_usage"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "disk_usage"
+    ]
+   ],
+   "ok": true,
+   "us": 76.5
+  },
+  {
+   "cat": "canonical",
+   "utterance": "system uptime",
+   "expected": [
+    [
+     "system_action",
+     "system_uptime"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "current_time"
+    ]
+   ],
+   "ok": false,
+   "us": 47.4
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "what is my ip address",
+   "expected": [
+    [
+     "system_action",
+     "ip_address"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "ip_address"
+    ]
+   ],
+   "ok": true,
+   "us": 53.8
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "what is my computer name",
+   "expected": [
+    [
+     "system_action",
+     "hostname"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "hostname"
+    ]
+   ],
+   "ok": true,
+   "us": 56.9
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "which operating system am i running",
+   "expected": [
+    [
+     "system_action",
+     "operating_system"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "operating_system"
+    ]
+   ],
+   "ok": true,
+   "us": 64.8
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open chrome",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": true,
+   "us": 72.8
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open visual studio code",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": true,
+   "us": 80.6
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open vscode",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": true,
+   "us": 71.9
+  },
+  {
+   "cat": "canonical",
+   "utterance": "open spotify",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": true,
+   "us": 72.7
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "launch discord",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": true,
+   "us": 72.2
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "start whatsapp",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": true,
+   "us": 73.2
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "run excel",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": true,
+   "us": 98.1
+  },
+  {
+   "cat": "canonical",
+   "utterance": "close chrome",
+   "expected": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "ok": true,
+   "us": 73.7
+  },
+  {
+   "cat": "canonical",
+   "utterance": "close spotify",
+   "expected": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "ok": true,
+   "us": 76.4
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "quit discord",
+   "expected": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "ok": true,
+   "us": 73.6
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "exit vscode",
+   "expected": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "ok": true,
+   "us": 73.5
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "terminate notepad",
+   "expected": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "ok": true,
+   "us": 77.4
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "kill chrome",
+   "expected": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "close"
+    ]
+   ],
+   "ok": true,
+   "us": 73.0
+  },
+  {
+   "cat": "canonical",
+   "utterance": "restart chrome",
+   "expected": [
+    [
+     "app_action",
+     "restart"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 77.9
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "is chrome running",
+   "expected": [
+    [
+     "app_action",
+     "is_running"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": false,
+   "us": 76.5
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "list running apps",
+   "expected": [
+    [
+     "app_action",
+     "list_running"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": false,
+   "us": 75.3
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "show running applications",
+   "expected": [
+    [
+     "app_action",
+     "list_running"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": false,
+   "us": 80.6
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "please open word",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": true,
+   "us": 75.2
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "could you open powerpoint",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": true,
+   "us": 78.4
+  },
+  {
+   "cat": "canonical",
+   "utterance": "minimize chrome",
+   "expected": [
+    [
+     "window_action",
+     "minimize"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "minimize"
+    ]
+   ],
+   "ok": true,
+   "us": 61.7
+  },
+  {
+   "cat": "canonical",
+   "utterance": "maximize chrome",
+   "expected": [
+    [
+     "window_action",
+     "maximize"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "maximize"
+    ]
+   ],
+   "ok": true,
+   "us": 61.9
+  },
+  {
+   "cat": "canonical",
+   "utterance": "restore notepad",
+   "expected": [
+    [
+     "window_action",
+     "restore"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "restore"
+    ]
+   ],
+   "ok": true,
+   "us": 65.9
+  },
+  {
+   "cat": "canonical",
+   "utterance": "switch to chrome",
+   "expected": [
+    [
+     "window_action",
+     "activate"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "activate"
+    ]
+   ],
+   "ok": true,
+   "us": 65.5
+  },
+  {
+   "cat": "canonical",
+   "utterance": "focus vscode",
+   "expected": [
+    [
+     "window_action",
+     "activate"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "activate"
+    ]
+   ],
+   "ok": true,
+   "us": 64.8
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "bring spotify to front",
+   "expected": [
+    [
+     "window_action",
+     "activate"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "activate"
+    ]
+   ],
+   "ok": true,
+   "us": 72.3
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "hide discord",
+   "expected": [
+    [
+     "window_action",
+     "minimize"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "minimize"
+    ]
+   ],
+   "ok": true,
+   "us": 58.7
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "fullscreen chrome",
+   "expected": [
+    [
+     "window_action",
+     "maximize"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "maximize"
+    ]
+   ],
+   "ok": true,
+   "us": 67.1
+  },
+  {
+   "cat": "canonical",
+   "utterance": "list windows",
+   "expected": [
+    [
+     "window_action",
+     "list"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "list"
+    ]
+   ],
+   "ok": true,
+   "us": 69.9
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "show windows",
+   "expected": [
+    [
+     "window_action",
+     "list"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "list"
+    ]
+   ],
+   "ok": true,
+   "us": 71.4
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "minimise the browser window",
+   "expected": [
+    [
+     "window_action",
+     "minimize"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "minimize"
+    ]
+   ],
+   "ok": true,
+   "us": 66.1
+  },
+  {
+   "cat": "canonical",
+   "utterance": "create folder projects",
+   "expected": [
+    [
+     "file_action",
+     "create_folder"
+    ]
+   ],
+   "got": [
+    [
+     "file_action",
+     "create_folder"
+    ]
+   ],
+   "ok": true,
+   "us": 57.6
+  },
+  {
+   "cat": "canonical",
+   "utterance": "create file notes.txt",
+   "expected": [
+    [
+     "file_action",
+     "create_file"
+    ]
+   ],
+   "got": [
+    [
+     "file_action",
+     "create_file"
+    ]
+   ],
+   "ok": true,
+   "us": 56.8
+  },
+  {
+   "cat": "canonical",
+   "utterance": "delete file notes.txt",
+   "expected": [
+    [
+     "file_action",
+     "delete_file"
+    ]
+   ],
+   "got": [
+    [
+     "file_action",
+     "delete_file"
+    ]
+   ],
+   "ok": true,
+   "us": 57.0
+  },
+  {
+   "cat": "canonical",
+   "utterance": "search file resume",
+   "expected": [
+    [
+     "file_action",
+     "search_file"
+    ]
+   ],
+   "got": [
+    [
+     "file_action",
+     "search_file"
+    ]
+   ],
+   "ok": true,
+   "us": 56.0
+  },
+  {
+   "cat": "canonical",
+   "utterance": "rename old.txt to new.txt",
+   "expected": [
+    [
+     "file_action",
+     "rename_file"
+    ]
+   ],
+   "got": [
+    [
+     "file_action",
+     "rename_file"
+    ]
+   ],
+   "ok": true,
+   "us": 62.6
+  },
+  {
+   "cat": "canonical",
+   "utterance": "move report.pdf to documents",
+   "expected": [
+    [
+     "file_action",
+     "move_file"
+    ]
+   ],
+   "got": [
+    [
+     "file_action",
+     "move_file"
+    ]
+   ],
+   "ok": true,
+   "us": 64.1
+  },
+  {
+   "cat": "canonical",
+   "utterance": "copy report.pdf to desktop",
+   "expected": [
+    [
+     "file_action",
+     "copy_file"
+    ]
+   ],
+   "got": [
+    [
+     "file_action",
+     "copy_file"
+    ]
+   ],
+   "ok": true,
+   "us": 63.2
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "make a new folder called photos",
+   "expected": [
+    [
+     "file_action",
+     "create_folder"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 92.8
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "find the file budget",
+   "expected": [
+    [
+     "file_action",
+     "search_file"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 83.4
+  },
+  {
+   "cat": "canonical",
+   "utterance": "play music",
+   "expected": [
+    [
+     "media_action",
+     "play_pause"
+    ]
+   ],
+   "got": [
+    [
+     "media_action",
+     "play_pause"
+    ]
+   ],
+   "ok": true,
+   "us": 75.6
+  },
+  {
+   "cat": "canonical",
+   "utterance": "pause",
+   "expected": [
+    [
+     "media_action",
+     "play_pause"
+    ]
+   ],
+   "got": [
+    [
+     "media_action",
+     "play_pause"
+    ]
+   ],
+   "ok": true,
+   "us": 67.1
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "pause the music",
+   "expected": [
+    [
+     "media_action",
+     "play_pause"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 78.0
+  },
+  {
+   "cat": "canonical",
+   "utterance": "next song",
+   "expected": [
+    [
+     "media_action",
+     "next"
+    ]
+   ],
+   "got": [
+    [
+     "media_action",
+     "next"
+    ]
+   ],
+   "ok": true,
+   "us": 72.2
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "skip",
+   "expected": [
+    [
+     "media_action",
+     "next"
+    ]
+   ],
+   "got": [
+    [
+     "media_action",
+     "next"
+    ]
+   ],
+   "ok": true,
+   "us": 66.5
+  },
+  {
+   "cat": "canonical",
+   "utterance": "previous song",
+   "expected": [
+    [
+     "media_action",
+     "previous"
+    ]
+   ],
+   "got": [
+    [
+     "media_action",
+     "previous"
+    ]
+   ],
+   "ok": true,
+   "us": 74.8
+  },
+  {
+   "cat": "canonical",
+   "utterance": "mute",
+   "expected": [
+    [
+     "media_action",
+     "mute"
+    ]
+   ],
+   "got": [
+    [
+     "media_action",
+     "mute"
+    ]
+   ],
+   "ok": true,
+   "us": 68.1
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "mute the volume",
+   "expected": [
+    [
+     "media_action",
+     "mute"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 79.8
+  },
+  {
+   "cat": "canonical",
+   "utterance": "take a screenshot",
+   "expected": [
+    [
+     "screenshot_action",
+     "take"
+    ]
+   ],
+   "got": [
+    [
+     "screenshot_action",
+     "take"
+    ]
+   ],
+   "ok": true,
+   "us": 80.3
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "capture the screen",
+   "expected": [
+    [
+     "screenshot_action",
+     "take"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 81.0
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "read the text on my screen",
+   "expected": [
+    [
+     "ocr_action",
+     "read"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 88.2
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "extract text from screenshot",
+   "expected": [
+    [
+     "ocr_action",
+     "read"
+    ]
+   ],
+   "got": [
+    [
+     "ocr_action",
+     "read"
+    ]
+   ],
+   "ok": true,
+   "us": 85.0
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "what is on my screen",
+   "expected": [
+    [
+     "vision_action",
+     "describe"
+    ]
+   ],
+   "got": [
+    [
+     "vision_action",
+     "describe"
+    ]
+   ],
+   "ok": true,
+   "us": 81.6
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "describe my screen",
+   "expected": [
+    [
+     "vision_action",
+     "describe"
+    ]
+   ],
+   "got": [
+    [
+     "vision_action",
+     "describe"
+    ]
+   ],
+   "ok": true,
+   "us": 80.7
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "scan this page for phishing",
+   "expected": [
+    [
+     "security_action",
+     "scan"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 86.0
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "is this website safe",
+   "expected": [
+    [
+     "security_action",
+     "scan"
+    ]
+   ],
+   "got": [
+    [
+     "security_action",
+     "scan"
+    ]
+   ],
+   "ok": true,
+   "us": 84.4
+  },
+  {
+   "cat": "paraphrase",
+   "utterance": "check this page for scams",
+   "expected": [
+    [
+     "security_action",
+     "scan"
+    ]
+   ],
+   "got": [
+    null
+   ],
+   "ok": false,
+   "us": 84.3
+  },
+  {
+   "cat": "compound",
+   "utterance": "open notepad and open calculator",
+   "expected": [
+    [
+     "system_action",
+     "notepad"
+    ],
+    [
+     "system_action",
+     "calculator"
+    ]
+   ],
+   "got": [
+    [
+     "system_action",
+     "notepad"
+    ],
+    [
+     "system_action",
+     "calculator"
+    ]
+   ],
+   "ok": true,
+   "us": 99.6
+  },
+  {
+   "cat": "compound",
+   "utterance": "open chrome and search google for python",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ],
+    [
+     "browser_action",
+     "google_search"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ],
+    [
+     "browser_action",
+     "google_search"
+    ]
+   ],
+   "ok": true,
+   "us": 129.2
+  },
+  {
+   "cat": "compound",
+   "utterance": "open youtube and then open github",
+   "expected": [
+    [
+     "browser_action",
+     "website"
+    ],
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ],
+    [
+     "browser_action",
+     "website"
+    ]
+   ],
+   "ok": false,
+   "us": 131.4
+  },
+  {
+   "cat": "compound",
+   "utterance": "take a screenshot and then read the text on my screen",
+   "expected": [
+    [
+     "screenshot_action",
+     "take"
+    ],
+    [
+     "ocr_action",
+     "read"
+    ]
+   ],
+   "got": [
+    null,
+    null
+   ],
+   "ok": false,
+   "us": 173.2
+  },
+  {
+   "cat": "compound",
+   "utterance": "open spotify, then play music",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ],
+    [
+     "media_action",
+     "play_pause"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ],
+    [
+     "media_action",
+     "play_pause"
+    ]
+   ],
+   "ok": true,
+   "us": 156.9
+  },
+  {
+   "cat": "compound",
+   "utterance": "minimize chrome; open notepad",
+   "expected": [
+    [
+     "window_action",
+     "minimize"
+    ],
+    [
+     "system_action",
+     "notepad"
+    ]
+   ],
+   "got": [
+    [
+     "window_action",
+     "minimize"
+    ],
+    [
+     "system_action",
+     "notepad"
+    ]
+   ],
+   "ok": true,
+   "us": 108.1
+  },
+  {
+   "cat": "compound",
+   "utterance": "open vscode and open chrome and open spotify",
+   "expected": [
+    [
+     "app_action",
+     "open"
+    ],
+    [
+     "app_action",
+     "open"
+    ],
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "got": [
+    [
+     "app_action",
+     "open"
+    ],
+    [
+     "app_action",
+     "open"
+    ],
+    [
+     "app_action",
+     "open"
+    ]
+   ],
+   "ok": true,
+   "us": 216.7
+  },
+  {
+   "cat": "compound_arg",
+   "utterance": "search google for salt and pepper recipes",
+   "expected": [
+    [
+     "browser_action",
+     "google_search"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "google_search"
+    ],
+    null
+   ],
+   "ok": false,
+   "us": 135.8
+  },
+  {
+   "cat": "compound_arg",
+   "utterance": "search youtube for tom and jerry",
+   "expected": [
+    [
+     "browser_action",
+     "youtube_search"
+    ]
+   ],
+   "got": [
+    [
+     "browser_action",
+     "youtube_search"
+    ],
+    null
+   ],
+   "ok": false,
+   "us": 127.7
+  },
+  {
+   "cat": "compound_arg",
+   "utterance": "create folder research and notes",
+   "expected": [
+    [
+     "file_action",
+     "create_folder"
+    ]
+   ],
+   "got": [
+    [
+     "file_action",
+     "create_folder"
+    ],
+    null
+   ],
+   "ok": false,
+   "us": 127.4
+  },
+  {
+   "cat": "out_of_scope",
+   "utterance": "how are you today",
+   "expected": null,
+   "got": [
+    [
+     "system_action",
+     "current_date"
+    ]
+   ],
+   "ok": false,
+   "us": 57.9
+  },
+  {
+   "cat": "out_of_scope",
+   "utterance": "tell me a joke",
+   "expected": null,
+   "got": [
+    null
+   ],
+   "ok": true,
+   "us": 77.5
+  },
+  {
+   "cat": "out_of_scope",
+   "utterance": "explain how photosynthesis works",
+   "expected": null,
+   "got": [
+    null
+   ],
+   "ok": true,
+   "us": 88.0
+  },
+  {
+   "cat": "out_of_scope",
+   "utterance": "who wrote hamlet",
+   "expected": null,
+   "got": [
+    null
+   ],
+   "ok": true,
+   "us": 78.1
+  },
+  {
+   "cat": "out_of_scope",
+   "utterance": "what is the capital of france",
+   "expected": null,
+   "got": [
+    null
+   ],
+   "ok": true,
+   "us": 88.6
+  },
+  {
+   "cat": "out_of_scope",
+   "utterance": "write a poem about the sea",
+   "expected": null,
+   "got": [
+    null
+   ],
+   "ok": true,
+   "us": 89.4
+  },
+  {
+   "cat": "out_of_scope",
+   "utterance": "thanks emma",
+   "expected": null,
+   "got": [
+    null
+   ],
+   "ok": true,
+   "us": 71.6
+  },
+  {
+   "cat": "out_of_scope",
+   "utterance": "give me tips to study better",
+   "expected": null,
+   "got": [
+    null
+   ],
+   "ok": true,
+   "us": 91.3
+  },
+  {
+   "cat": "out_of_scope",
+   "utterance": "recommend a good movie",
+   "expected": null,
+   "got": [
+    null
+   ],
+   "ok": true,
+   "us": 83.8
+  },
+  {
+   "cat": "out_of_scope",
+   "utterance": "translate hello to hindi",
+   "expected": null,
+   "got": [
+    null
+   ],
+   "ok": true,
+   "us": 85.5
+  }
+ ]
+}
