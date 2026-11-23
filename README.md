@@ -1,61 +1,79 @@
-# Emma – AI-Powered Personal Assistant
+# Emma – AI-Powered Desktop Personal Assistant
+## Overview
 
-**Emma** is an AI-powered personal operating system assistant designed to make everyday computer interactions smarter, easier and more efficient. It provides a unified interface for interacting with your system through voice and text commands, accessing AI-powered assistance, managing productivity and exploring system-related features.
+**Emma** is an AI-powered desktop personal assistant that combines artificial intelligence, voice interaction, desktop automation, and cybersecurity monitoring into one unified application.
 
-The project combines Artificial Intelligence, full-stack development, desktop automation and cybersecurity concepts to create a personal assistant experience.
+Built with a modern React frontend and a Python-based FastAPI backend, Emma provides an interactive environment where users can communicate with an AI assistant, execute computer-related commands, monitor system performance, and manage everyday tasks.
 
-## ✨ Features
+The project integrates AI language models, speech technologies, and system-level utilities to create a more intuitive and intelligent desktop experience.
 
-### 🤖 AI-Powered Assistant
-- Interact with the assistant using text and voice commands.
-- AI-powered conversational interface.
-- Designed to assist with everyday tasks and system interactions.
+## Key Features
 
-### 🖥️ Desktop Interaction
-- Personal operating system assistant experience.
-- System information and status monitoring.
-- Desktop-oriented interaction interface.
+### 1. AI-Powered Conversational Assistant
 
-### 💬 AI Chat Interface
-- Dedicated AI chat interface.
-- Interactive conversation experience.
-- Organized chat interface for user interactions.
+- Interactive AI-powered chat interface.
+- Natural language communication.
+- Integration with OpenAI and Google Gemini APIs.
+- Persistent conversation and user-memory storage.
+- Context-aware assistant interactions.
 
-### ⚡ Automation
-- Dedicated automation dashboard.
-- Interface for managing assistant-related actions.
-- Designed to simplify repetitive tasks.
+### 2. Voice Interaction
 
-### 🔐 Security
-- Dedicated security dashboard.
-- Security-related monitoring and functionality.
-- Focus on improving awareness of system and browsing security.
+- Voice-based input and interaction.
+- Speech recognition for converting spoken commands into text.
+- Text-to-speech responses.
+- Hands-free interaction with the assistant.
 
-### 📊 Dashboard
-- Centralized application dashboard.
-- Quick access to different assistant modules.
-- Organized overview of application activities.
+### 3. Intelligent Desktop Automation
 
-### ⚙️ User Settings
-- Dedicated settings interface.
-- Application configuration and preferences.
-- User-oriented interface management.
+- Execute computer-related commands using natural language.
+- Application launching and desktop interaction.
+- Command processing and execution.
+- File and system-related operations.
 
-## 🛠️ Technologies Used
+### 4. System Monitoring
 
-| Category | Technologies |
-|---|---|
-| Programming Language | Python, TypeScript |
-| Frontend | React, Vite |
-| Backend | FastAPI |
-| AI / Machine Learning | AI APIs, AI-powered assistant components |
-| Styling | CSS |
-| API Communication | REST APIs |
-| Development Tools | VS Code, Git, GitHub |
+- Real-time CPU usage monitoring.
+- RAM utilization tracking.
+- Battery status monitoring.
+- Disk usage monitoring.
+- System status dashboard.
 
-*Note: Update this list if your final implementation uses additional technologies or different libraries.*
+### 5. Cybersecurity Monitoring
 
-## 📁 Project Structure
+- Dedicated security monitoring interface.
+- Security-related system information.
+- Integration with security monitoring components.
+
+### 6. Modern User Interface
+
+- Modern React-based interface.
+- Interactive dashboard.
+- Dedicated chat interface.
+- Sidebar navigation.
+- Theme customization.
+- Responsive component-based architecture.
+
+## Technology Stack
+
+| Component          | Technologies                                |
+| ------------------ | ------------------------------------------- |
+| Frontend           | React 19, TypeScript                        |
+| Build Tool         | Vite                                        |
+| Styling            | Tailwind CSS, CSS                           |
+| Backend            | Python, FastAPI                             |
+| Server             | Uvicorn                                     |
+| Database           | SQLite                                      |
+| AI Integration     | OpenAI API, Google Gemini API               |
+| Voice Recognition  | React Speech Recognition, SpeechRecognition |
+| Text-to-Speech     | pyttsx3                                     |
+| System Monitoring  | psutil                                      |
+| HTTP Communication | Axios                                       |
+| Version Control    | Git, GitHub                                 |
+
+## Project Architecture
+
+Emma follows a frontend-backend architecture where the React application communicates with the Python backend through REST APIs.
 
 ```text
 Emma/
@@ -65,14 +83,24 @@ Emma/
 │   ├── assistant/
 │   ├── database/
 │   ├── desktop/
+│   │   ├── controllers/
+│   │   └── nlu/
+│   ├── models/
+│   ├── prompts/
 │   ├── routes/
+│   ├── screenshots/
 │   ├── services/
 │   ├── main.py
-│   └── requirements.txt
+│   ├── config.py
+│   ├── requirements.txt
+│   └── .env.example
 │
 ├── frontend/
 │   ├── public/
 │   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── hooks/
 │   │   ├── pages/
 │   │   ├── services/
 │   │   ├── types/
@@ -83,23 +111,35 @@ Emma/
 └── README.md
 ```
 
-## ⚙️ Installation and Setup
+## How It Works
 
-Follow these steps to run Emma locally.
+1. **User Interaction:** Users communicate with Emma through text or voice.
+2. **Frontend Processing:** The React application handles user interaction and sends requests to the backend.
+3. **Backend Processing:** FastAPI receives requests and routes them to the appropriate services.
+4. **AI Processing:** AI integrations process conversational requests and generate intelligent responses.
+5. **Command Execution:** The command engine handles supported desktop operations.
+6. **System Monitoring:** System utilities collect performance information and provide it to the dashboard.
+7. **Response Delivery:** The backend returns the processed response to the frontend.
+
+## Installation and Setup
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Python 3.11 or above
+- Node.js and npm
+- Git
+- OpenAI API key and/or Google Gemini API key
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Sarthak-Parashetti/Emma-AI.git
+git clone https://github.com/Sarthakparashetti/Emma-AI-Assistant.git
+cd Emma-AI-Assistant
 ```
 
-### 2. Navigate to the Project
-
-```bash
-cd Emma-AI
-```
-
-### 3. Backend Setup
+### 2. Backend Setup
 
 Navigate to the backend directory:
 
@@ -107,7 +147,7 @@ Navigate to the backend directory:
 cd backend
 ```
 
-Create a Python virtual environment:
+Create a virtual environment:
 
 ```bash
 python -m venv venv
@@ -115,29 +155,45 @@ python -m venv venv
 
 Activate the environment on Windows:
 
-```bash
+```powershell
 venv\Scripts\activate
 ```
 
-Install the required dependencies:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file in the backend directory and configure the required environment variables.
+Configure your environment variables using the provided example:
 
-**Important:** Never upload API keys, passwords or other sensitive credentials to GitHub.
+```powershell
+Copy-Item .env.example .env
+```
+
+Add your own API credentials to the `.env` file using the variable names provided in `.env.example`.
 
 Start the backend server:
 
 ```bash
-python -m uvicorn main:app --reload
+uvicorn main:app --reload
 ```
 
-### 4. Frontend Setup
+The backend API will be available at:
 
-Open a new terminal and navigate to the frontend directory:
+```text
+http://127.0.0.1:8000
+```
+
+API documentation:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+### 3. Frontend Setup
+
+Open another terminal and navigate to the frontend directory:
 
 ```bash
 cd frontend
@@ -155,39 +211,39 @@ Start the development server:
 npm run dev
 ```
 
-Open the local URL displayed in your terminal to access the frontend.
+Open the local URL displayed in your terminal to access Emma.
 
-## 🔒 Security
+## Environment Variables
 
-Security is an important aspect of Emma's development.
+Emma uses environment variables to manage API credentials and configuration.
 
-- Environment variables are used for sensitive configuration.
-- API keys and credentials should never be committed to the repository.
-- `.gitignore` excludes environment files, virtual environments and unnecessary generated files.
-- Security-related functionality is organized within the application.
+Create a `.env` file inside the backend directory and configure the variables listed in `.env.example`.
 
-## 🚀 Future Scope
+**Important:** Never upload your actual API keys, passwords, or sensitive credentials to GitHub.
 
-Potential areas for further development include:
+## Future Enhancements
 
-- Improving AI-powered task automation.
-- Expanding desktop-level system interactions.
-- Enhancing cybersecurity monitoring capabilities.
-- Improving voice recognition and assistant responsiveness.
-- Integrating additional productivity services.
-- Expanding the assistant's capabilities through AI and automation.
+- Advanced AI agent capabilities.
+- More intelligent desktop automation.
+- Expanded cybersecurity monitoring.
+- Improved contextual memory.
+- Additional third-party integrations.
+- Enhanced voice interaction and personalization.
 
-## 👨‍💻 Developer
+## Project Information
+
+**Project Name:** Emma – AI Desktop Assistant
+
+**Category:** Artificial Intelligence | Desktop Automation | Voice Assistant | Cybersecurity
+
+**Development:** Personal Capstone Project
+
+**Repository:** [Emma AI Assistant on GitHub](https://github.com/Sarthakparashetti/Emma-AI-Assistant)
+
+## Author
 
 **Sarthak Parashetti**
 
-B.Tech Student | AI & Machine Learning | Full-Stack Development
+Computer Engineering Student | AI & Software Development Enthusiast
 
-- GitHub: [Sarthak-Parashetti](https://github.com/Sarthak-Parashetti)
-- Project Repository: [Emma-AI](https://github.com/Sarthak-Parashetti/Emma-AI)
-
----
-
-⭐ If you find this project interesting, consider giving the repository a star!
-
-**Emma – Making everyday computer interactions smarter with AI.**
+- GitHub: [@Sarthak-Parashetti](https://github.com/Sarthak-Parashetti)
